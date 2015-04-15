@@ -1293,7 +1293,7 @@ class MarkdownExtra extends \Michelf\Markdown {
 				)
 				[ ]*
 				(?:
-					\.?([-_:a-zA-Z0-9]+) # 2: standalone class name
+					\.?([-_:.a-zA-Z0-9]+) # 2: standalone class name
 				|
 					'.$this->id_class_attr_catch_re.' # 3: Extra attributes
 				)?
