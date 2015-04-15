@@ -1035,7 +1035,6 @@ class MarkdownExtra extends \Michelf\Markdown {
 						[|] .* \n			# Row content.
 					)*
 				)
-				(?=\n|\Z)					# Stop at final double newline.
 			}xm',
 			array($this, '_doTable_leadingPipe_callback'), $text);
 		
@@ -1061,7 +1060,6 @@ class MarkdownExtra extends \Michelf\Markdown {
 						.* [|] .* \n		# Row content
 					)*
 				)
-				(?=\n|\Z)					# Stop at final double newline.
 			}xm',
 			array($this, '_DoTable_callback'), $text);
 
